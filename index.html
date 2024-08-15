@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Bmi</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kalkulator BMI</h1>
+            <p>Hitung Indeks Massa Tubuh Anda dan pelajari lebih lanjut tentang BMI.</p>
+        </header>
+        
+        <form id="bmiForm">
+            <div class="form-group">
+                <label for="weight">Berat (kg):</label>
+                <input type="number" id="weight" placeholder="Masukkan berat Anda" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Tinggi (cm):</label>
+                <input type="number" id="height" placeholder="Masukkan tinggi Anda" required>
+            </div>
+            <div class="form-actions">
+                <button type="submit">Hitung BMI</button>
+                <button type="button" id="resetButton">Reset</button>
+            </div>
+        </form>
+        
+        <div id="result" class="hidden">
+            <h2>Hasil BMI</h2>
+            <p id="bmiValue"></p>
+            <p id="bmiCategory"></p>
+        </div>
+        
+        <section class="info">
+            <h2>Apa Itu BMI?</h2>
+            <p>
+                BMI, atau Indeks Massa Tubuh, adalah ukuran yang digunakan untuk menilai apakah seseorang memiliki berat badan yang sehat berdasarkan tinggi badan mereka. 
+                BMI dihitung dengan membagi berat badan (dalam kilogram) dengan kuadrat tinggi badan (dalam meter). 
+                <strong>Formula BMI:</strong> <br>
+                <em>BMI = Berat (kg) / (Tinggi (m) x Tinggi (m))</em>
+            </p>
+            <h3>Kategori BMI:</h3>
+            <ul>
+                <li><strong>Kekurangan berat badan:</strong> BMI kurang dari 18,5</li>
+                <li><strong>Berat badan normal:</strong> BMI 18,5 - 24,9</li>
+                <li><strong>Kelebihan berat badan:</strong> BMI 25 - 29,9</li>
+                <li><strong>Kegemukan (Obesitas):</strong> BMI 30 atau lebih</li>
+            </ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
